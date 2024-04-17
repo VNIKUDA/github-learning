@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: flex;">
+    <form method="post" enctype="multipart/form-data" action="/audio-tracks/upload">
+        <label for="file"><b>Допустимі типи файлів: {{valid_track_types}}</b></label>
+        <input type="file" name="file" id="file" >
+        <input type="text" name="song_id">
+        <input type="submit" value="Завантажити">
+    </form>
+</body>
+</html>
